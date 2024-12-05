@@ -1,0 +1,104 @@
+#loader {
+    width: 100px;
+    height: 100px;
+    border: 7px solid #6757d9;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    animation: loader linear 2s infinite ;
+}
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#container {
+    display: none;
+    margin-top: 40px;
+    width: 700px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: #6757d9;
+    font-size: 1.5rem;
+}
+.question-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.question-text span {
+    display: inline-block;
+    background: #ffff;
+    margin-left: 6px;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+#question-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+#question-text {
+    background-color: #6757d9;
+    margin-bottom: 30px;
+    padding: 14px;
+    color: #fff;
+    border-radius: 17px;
+}
+#question-category {
+    background-color: #6757d9;
+    margin-bottom: 30px;
+    padding: 14px;
+    color: #fff;
+    border-radius: 17px;
+    text-align: center;
+}
+.answer-text {
+    margin-bottom: 10px;
+    border: 2px solid rgb(219, 225, 228);
+    padding: 12px 15px;
+    border-radius: 12px;
+    text-align: left;
+    font-size: 1.3rem;
+    /* color: #6757d9; */
+    cursor: pointer;
+}
+.answer-text:hover {
+    background-color: #d2dee4;
+    transition: all .20s ease;
+
+}
+#finish-button, #next-button {
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    /* background-color: ; */
+    background-color: #fff;
+    padding: 8px 15px;
+    border: #6757d9 solid 2px;
+    /* margin-left: 10px; */
+    cursor: pointer;
+}
+#finish-button:hover, #next-button:hover {
+    color: #fff;
+    transition: all .25s ease;
+    background-color: #6757d9;
+}
+.correct {
+    background-color: #5bd7bc;
+}
+.inCorrect{
+    background-color: rgb(194, 71, 71);
+}
+.correct:hover {
+    background-color: #5bd7bc;
+}
+.inCorrect:hover {
+    background-color: rgb(194, 71, 71);
+}
